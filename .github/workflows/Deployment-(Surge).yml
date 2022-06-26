@@ -28,7 +28,7 @@ jobs:
           cache: 'npm'
       # Runs commands to install NPM Node_Modules & Production Build
       - name: Installing NPM
-        run: npm ci
+        run: npm ci --legacy-peer-deps
       
       - name: Making Production Build
         run: npm run build --if-present npm test
