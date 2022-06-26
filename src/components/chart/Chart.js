@@ -53,6 +53,7 @@ const Chart = ({ data: { confirmed, recovered, deaths }, country }) => {
   )
   return (
     <div className={styles.container}>
+      <p className={styles.display}>Rotate Phone For Best A Better View</p>
       {country ? barChart : lineChart}
     </div>
   )
